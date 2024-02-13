@@ -1,0 +1,36 @@
+.title{
+    margin: 0 auto;
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(-20deg, rgba(162,181,223,1) 22%, rgb(81 141 237) 100%) 1;
+
+    color: black;
+   max-width: 400px;
+    text-align: center;
+}
+.title-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px 10px;
+    letter-spacing: 5px;
+    line-height: 129%;
+}
+
+@media (min-width: 0px)  and (max-width: 480px) {
+ .title-text{
+    font-size: 25px;
+    padding: 10px;
+ }
+ .title{
+    width: 80%;
+    margin-bottom: 15%;
+ }
+}
+
+@media (min-width: 481px)  and (max-width: 768px) {
+    .title{
+        width: 80%;
+        margin-bottom: 15%;
+     }
+}
