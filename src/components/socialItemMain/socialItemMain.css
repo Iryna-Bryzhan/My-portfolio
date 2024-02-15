@@ -35,16 +35,16 @@
     .socials-main{
         display: flex;
         flex-direction: column;
-        width: 45px;
+        width: 41px;
     }
     .social-main {
         margin-right: 0;
     }
     .tel-main a{
-        margin-bottom: 5%;
+        margin-bottom: 4%;
     }
     .socials-main img{
-        width: 23px;
+        width: 22px;
     
     }
  }  

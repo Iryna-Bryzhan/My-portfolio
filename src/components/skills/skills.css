@@ -63,11 +63,11 @@
  
     #skills{
         height: auto;
-        padding-top: 25%;
+        padding-top: 27%;
     }
     .using{
         text-align: center;
-        font-size: 26px;
+        font-size: 24px;
         margin: 20% 0;
     }
     .skills-list{
@@ -87,7 +87,7 @@
         width: 50%;
     }
     .skills-item-text{
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 400;
         letter-spacing: 0.5px;
     }

@@ -162,28 +162,30 @@
 
 
 @media (min-width: 0px) and (max-width: 480px) {
-
+    .container-screen-main {
+        width: 90%;
+    }
 
 .myCV{
-    width: 60%;
+    width: 45%;
     margin-bottom: 15%;
 }
 .info-left{
-    top: 60%;
+    top: 52%;
     position: relative;
 }
 .info-left h1{
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 800;
     margin-bottom: 5%;
 }
 .info-left h3{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 800;
     margin-bottom: 5%;
 }
 .prof{
-    font-size: 25px;
+    font-size: 23px;
 }
 
 }

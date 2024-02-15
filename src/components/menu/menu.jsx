@@ -27,6 +27,7 @@ const Menu = () => {
 
     const handleLanguageChange = (newLang) => {
         changeLanguage(newLang);
+        handleMenuClick();
     };
     
     const handleMenuClick = () => {
@@ -44,7 +45,7 @@ const handleScroll = () => {
     
     window.addEventListener('scroll', handleScroll);  
 
-    
+
 
     return (
         <>
@@ -77,8 +78,13 @@ const handleScroll = () => {
                     <a href="#about" onClick={handleMenuClick} data-lang-key="about">About me</a>
                     <a href="#skills" onClick={handleMenuClick} data-lang-key="skills">Skills</a>
                     <a href="#portfolio" onClick={handleMenuClick} data-lang-key="portfolio">Portfolio</a>
-                    <a href="#contact" className="contactMe" onClick={handleMenuClick} data-lang-key="contact">CONTACT ME</a>
-                    <button className={`change-lang ${lang === 'ua' ? 'active' : ''}`} onClick={() => handleLanguageChange('ua')}>UA</button>
+                    <div className="contactMe">
+                    <a href="#contact"  data-lang-key="contact">CONTACT ME</a>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>                    <button className={`change-lang ${lang === 'ua' ? 'active' : ''}`} onClick={() => handleLanguageChange('ua')}>UA</button>
                     <button className={`change-lang ${lang === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>EN</button>  
                 </div>
             </div>

@@ -111,23 +111,37 @@ h2 {
 
     .cards {
        margin-top: 15%;
+       width: 92%;
+       margin: 0 auto;
      }
      
      .card {
        margin-bottom: 15%;
        box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.4);
      }
+     .card-info{
+        height: 50%;
+     }
      .card img {
         width: 100%;
        }
+       .card-links {
+        height: 15%;
+    }
+    .card-title-descr {
+        height: 53px;
+    }
+    .card-title-stack {
+        margin-bottom: 8%;
+    }
      h2 {
-           font-size: 22px;
+           font-size: 20px;
          } 
      .card-title p {
              font-size: 16px;
      }
      .card-link-item p{
-         font-size: 16px;
+         font-size: 15px;
      }
      .card-link-item img{
          width: 20px;
@@ -254,7 +268,7 @@ h2 {
       max-width: 450px;
       position: relative;
       text-align: left;
-      width: 450px;
+      max-width: 450px;
       margin-bottom: 5%;
       border-radius: 5px;
       transition: 1s;

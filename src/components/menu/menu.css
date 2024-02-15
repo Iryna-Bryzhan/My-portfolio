@@ -217,7 +217,7 @@
   }
   
   .menu-burger{
-    background-color: #0B0B0B;
+    background: linear-gradient(170deg, rgba(162,181,223,1) 40%, rgb(81 141 237) 153%);
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -233,7 +233,7 @@
     gap: 3%;
     display: flex;
     flex-direction: column;
-    top: 15%;
+    top: 25%;
 
   }
   .menu-burger-item a{
@@ -251,7 +251,8 @@
         justify-content: space-between;
     }
     .logo{
-      width: 50%;
+      width: 55%;
+      font-size: 25px;
     }
     .menu-list{
       display: none;
@@ -269,6 +270,10 @@
         margin: 0 auto;
         font-size: 18px;
         font-weight: bold;
+        margin-bottom: 1%;
+    }
+    .change-lang {
+      padding: 0px 5px;
     }
 }
 
