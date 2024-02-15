@@ -12,8 +12,7 @@
     "react-scripts": "5.0.1",
     "react-waypoint": "^10.3.0",
     "waypoints": "^4.0.1",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://iryna-bryzhan.github.io/portfolio/"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
