@@ -1,9 +1,7 @@
 import React from 'react';
-import { useLang } from '../../main';
 import "./title.css";
 
 function Title(props) {
-  const { lang } = useLang();
 
   return (
     <div className="title">

@@ -2,7 +2,6 @@
 import './index.css';
 import { langArr } from './lang';
 import { useState, useEffect } from 'react';
-import WOW from 'wow.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     var menuLinks = document.querySelectorAll('.menu-list a');

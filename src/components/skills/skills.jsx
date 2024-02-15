@@ -10,7 +10,7 @@ import github from "../../img/akar-icons_github-fill.svg"
 import figma from "../../img/figma.png"
 import Dot from "../../img/Dots.png"
 import "./skills.css"
-import { useEffect, useRef } from "react"
+// import { useEffect, useRef } from "react"
 
 const Skills = () =>{
     // const skillsRef = useRef(null);

@@ -1,11 +1,12 @@
 import React from "react"
 import "./screenMain.css"
-import screenBg from "../../img/Rectangle 67.png"
+// import screenBg from "../../img/Rectangle 67.png"
 // import MyPhoto from "../../img/photo_2022-03-29_16-05-30.jpg"
-import MyPhoto from "../../img/IMG_20191023_185340_081.jpg"
-import SocialItem from "../socialItem/socialItem"
+
 import SocialItemMain from "../socialItemMain/socialItemMain"
-import {langArr} from "../../lang"
+// import {langArr} from "../../lang"
+// import MyPhoto from "../../img/IMG_20191023_185340_081.jpg"
+// import SocialItem from "../socialItem/socialItem"
 
 const ScreenMain = () => {
     return( 

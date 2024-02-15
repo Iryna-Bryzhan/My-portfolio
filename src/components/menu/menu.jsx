@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import "./menu.css"
 import "../../index"
-import {langArr} from "../../lang"
-import { currentLang, changeLanguage } from '../../main';
+// import {langArr} from "../../lang"
+import { currentLang } from '../../main';
 import {useLang} from '../../main';
 
 function myFunction() {

@@ -1,12 +1,9 @@
 import "./about.css"
 import Title from '../title/title';
-import ImgCode from "../../img/free-icon-code-5964949.png"
 import MyPhoto from "../../img/photo_2024-02-04_22-23-58-removebg.png"
-import Development from "../../img/free-icon-development-8190450.png"
-import Software from "../../img/free-icon-software-development-8759392.png"
 import 'animate.css';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const About = () => {
 
