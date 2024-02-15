@@ -11,7 +11,7 @@ const About = () => {
         <div id="about" >
             <Title title="About me"></Title>
             <div className="about-content">
-            <div className="about-text" data-wow-duration="1s">
+            <div className="about-text">
            <p data-lang-key="about-text-1"> My name is Iryna and I am a Junior Front-end Developer, I completed courses in web development, JavaScript and React at 7Education under the guidance of a mentor, and also listened to several online courses.
             </p> 
             <p data-lang-key="about-text-2">I have no commercial work experience, but I have a strong interest in website development, able to provide responsive and aesthetic layout, according to requirements and standards.
