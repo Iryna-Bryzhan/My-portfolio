@@ -2,6 +2,7 @@
 import './index.css';
 import { langArr } from './lang';
 import { useState, useEffect } from 'react';
+import AOS from 'aos';
 
 document.addEventListener('DOMContentLoaded', function() {
     var menuLinks = document.querySelectorAll('.menu-list a');
@@ -42,38 +43,41 @@ document.addEventListener('DOMContentLoaded', function() {
   //   observer.observe(target)
   // })
   
-  const animItems = document.querySelectorAll(".anim-items")
+
+
   
-  if(animItems.length > 0 ){
-    window.addEventListener('scroll', animOnScroll)
-    function animOnScroll(){
-      for(let index = 0; index < animItems.length; index++){
-        const animItem = animItems[index]
-        const animItemHeight = animItem.offsetHeight
-        const animItemOffset = offset(animItem).top;
-        const animStart = 4;
+  // const animItems = document.querySelectorAll(".anim-items")
   
-        let animItemPoint = window.innerHeight - animItemHeight / animStart;
+  // if(animItems.length > 0 ){
+  //   window.addEventListener('scroll', animOnScroll)
+  //   function animOnScroll(){
+  //     for(let index = 0; index < animItems.length; index++){
+  //       const animItem = animItems[index]
+  //       const animItemHeight = animItem.offsetHeight
+  //       const animItemOffset = offset(animItem).top;
+  //       const animStart = 4;
   
-        if(animItemHeight>window.innerHeight){
-          animItemPoint = window.innerHeight - window.innerHeight/animStart
-        }
-        if((window.scrollY > animItemOffset - animItemPoint) && window.scrollY < (animItemOffset + animItemHeight)){
-          animItem.classList.add("active")
-        }  else{
-          animItem.classList.remove('active')
-        }
-      }
-    }
-    function offset(el){
-      const rect = el.getBoundingClientRest(),
-      scrollLeft = window.scrollX || document.documentElement.scrollLeft,
-      scrollTop = window.scrollY || document.documentElement.scrollTop;
-      return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
+  //       let animItemPoint = window.innerHeight - animItemHeight / animStart;
+  
+  //       if(animItemHeight>window.innerHeight){
+  //         animItemPoint = window.innerHeight - window.innerHeight/animStart
+  //       }
+  //       if((window.scrollY > animItemOffset - animItemPoint) && window.scrollY < (animItemOffset + animItemHeight)){
+  //         animItem.classList.add("active")
+  //       }  else{
+  //         animItem.classList.remove('active')
+  //       }
+  //     }
+  //   }
+  //   function offset(el){
+  //     const rect = el.getBoundingClientRest(),
+  //     scrollLeft = window.scrollX || document.documentElement.scrollLeft,
+  //     scrollTop = window.scrollY || document.documentElement.scrollTop;
+  //     return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
    
-    }
-    animOnScroll()
-  }
+  //   }
+  //   animOnScroll()
+  // }
   
   
   
@@ -130,12 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   export { currentLang, changeLanguage, useLang, langArr };
-  
-  
-  
-  
-  
-  
-  
+
+  AOS.init();
   
   

@@ -22,12 +22,17 @@ const Menu = () => {
     const { lang, changeLanguage } = useLang();
 
     useEffect(() => {
-        changeLanguage(currentLang); // Установка текущего языка при первом рендере компонента
+        const savedLang = localStorage.getItem('selectedLang');
+        if (savedLang) {
+            changeLanguage(savedLang); // Установка сохраненного языка при первом рендере компонента
+        } else {
+            changeLanguage(currentLang); // Если нет сохраненного языка, установите текущий язык
+        }
     }, []); // Пустой массив зависимостей означает, что эффект будет вызван только при монтировании компонента
 
     const handleLanguageChange = (newLang) => {
         changeLanguage(newLang);
-        handleMenuClick();
+        localStorage.setItem('selectedLang', newLang); // Сохраняем выбранный язык в localStorage
     };
     
     const handleMenuClick = () => {
@@ -84,7 +89,8 @@ const handleScroll = () => {
                     <span></span>
                     <span></span>
                     <span></span>
-                    </div>                    <button className={`change-lang ${lang === 'ua' ? 'active' : ''}`} onClick={() => handleLanguageChange('ua')}>UA</button>
+                    </div>                    
+                    <button className={`change-lang ${lang === 'ua' ? 'active' : ''}`} onClick={() => handleLanguageChange('ua')}>UA</button>
                     <button className={`change-lang ${lang === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>EN</button>  
                 </div>
             </div>

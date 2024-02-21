@@ -233,7 +233,7 @@
     gap: 3%;
     display: flex;
     flex-direction: column;
-    top: 25%;
+    top: 23%;
 
   }
   .menu-burger-item a{
@@ -251,8 +251,8 @@
         justify-content: space-between;
     }
     .logo{
-      width: 55%;
-      font-size: 25px;
+      width: 70%;
+      font-size: 24px;
     }
     .menu-list{
       display: none;
@@ -344,10 +344,12 @@
         justify-content: space-between;
     }
     .logo{
-      width: 45%;
+        width: 30%;
+        font-size: 25px;
     }
     .menu-list a {
       font-size: 20px;
+      margin-right: 3%;
   }
   .change-lang {
     padding: 10px 3px;
@@ -355,7 +357,7 @@
     margin-left: 2%;
 }
 .contactMe {
-  width: 30%;
+  width: 25%;
   text-align: center;
   background: linear-gradient(-20deg, rgba(162,181,223,1) 15%, rgb(81 141 237) 100%);
   padding: 10px 5px;
@@ -379,6 +381,9 @@
     .contactMe a {
       font-size: 20px;
     }
+    .menu-list a {
+      font-size: 20px;
+  }
 }
 @media (min-width: 1201px)  and (max-width: 1350px) {
   .contactMe {

@@ -13,19 +13,19 @@ const ScreenMain = () => {
         <div className="screen-main">
         <div className="container-screen-main">
             <div className="info-left">
-                <h3 className="main-text  animate__animated animate__fadeInDownBig " data-lang-key="main-text">Hello, I am</h3>
-                <h1 className="name animate__animated animate__bounceInLeft animate__delay-1s"  data-lang-key="name">Iryna Bryzhan</h1>
-                <p className="prof animate__animated animate__fadeInRight animate__delay-2s" data-lang-key="prof">Front-end Developer</p>
-                <div className="myCV animate__animated animate__fadeIn animate__delay-3s">
-                <a  data-lang-key="myCV" href="https://drive.google.com/file/d/1ef-xhQS7kkBqTjJabnFYJfyR2ra1Si23/view" target="blank">
+                <h3 className="main-text" data-aos="fade-down"  data-lang-key="main-text">Hello, I am</h3>
+                <h1 className="name" data-aos="fade-right" data-aos-delay="600"  data-lang-key="name">Iryna Bryzhan</h1>
+                <p className="prof"  data-aos="fade-up-left" data-aos-delay="1000" data-lang-key="prof">Front-end Developer</p>
+                <a href="https://drive.google.com/file/d/1VfEZAwrYO6yivymSkEGF7HoaoJEVKnVd/view" target="blank" className="myCV " data-aos="fade-up-left" data-aos-delay="1500">
+                <div data-lang-key="myCV" className="myCV-text" >
                 My CV
-                    </a>
+                    </div>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                    
-                    </div>
+                    </a>
             </div> 
             <SocialItemMain></SocialItemMain>
 

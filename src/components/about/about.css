@@ -17,7 +17,7 @@
     border-width: 8px 0 0 8px;
     padding: 5%;
     border-style: solid;
-    border-image: linear-gradient(-20deg, rgba(162,181,223,1) 22%, rgb(81 141 237) 100%) 1;  
+    border-image: linear-gradient(-20deg, rgba(162,181,223,1) 22%, rgb(81 141 237) 100%) 1; 
 }
 .about-text p{
     margin-bottom: 2%;

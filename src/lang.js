@@ -60,7 +60,7 @@ export const langArr = {
         "ua": "Завжди намагаюсь вчасно виконувати задачі і надаю перевагу постійному самовдосконаленню та професійному розвитку. "
     },
     "button-submit": { 
-        "en": " Send Message",
+        "en": "Send Message",
         "ua": "Написати",
     },
     "using": { 
@@ -111,21 +111,21 @@ export const langArr = {
         "en": "Message",
         "ua": "Повідомлення",
     },
-      // "contact": { 
-    //     "en": "Contact Me",
-    //     "ua": "Зв'язатися",
+      "button-see-more": { 
+        "en": "See more",
+        "ua": "Більше",
+    },
+    // "button-submit": { 
+    //     "en": "Send Message",
+    //     "ua": "Написати",
     // },
-    // "contact": { 
-    //     "en": "Contact Me",
-    //     "ua": "Зв'язатися",
-    // },
-      // "contact": { 
-    //     "en": "Contact Me",
-    //     "ua": "Зв'язатися",
-    // },
-    // "contact": { 
-    //     "en": "Contact Me",
-    //     "ua": "Зв'язатися",
-    // },
+      "button-error-text": { 
+        "en": "Sorry, an error occurred!",
+        "ua": "Вибачте, сталася помилка!",
+    },
+    "button-success-text": { 
+        "en": "Message sent!",
+        "ua": "Повідомлення відправлено!",
+    },
     
 }

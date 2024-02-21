@@ -17,6 +17,7 @@
   justify-content: center;
   gap: 3%;
   margin-top: 7%;
+  /* margin-bottom: 5%; */
 }
 
 .card {
@@ -91,6 +92,7 @@ h2 {
     display: flex;
     color: black;
     align-items: center;
+    padding: 4% 0;
 }
 .card-link-item p{
     font-size: 17px;
@@ -100,6 +102,18 @@ h2 {
     height: 20px;
     margin-right: 5px;
 }
+
+.button-submit.seeMore{
+    width: 20%;
+    background: transparent;
+    border: none;
+}
+
+.button-seeMore{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
 
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -126,7 +140,7 @@ h2 {
         width: 100%;
        }
        .card-links {
-        height: 15%;
+        height: 17%;
     }
     .card-title-descr {
         height: 53px;
@@ -148,6 +162,10 @@ h2 {
          height: 20px;
          margin-right: 5px;
      }
+     .button-submit.seeMore{
+        width: 60%;
+        font-size: 18px;
+    }
  }    
 
  @media (min-width: 481px) and (max-width: 576px) {
@@ -181,6 +199,9 @@ h2 {
          height: 20px;
          margin-right: 5px;
      }
+     .button-submit.seeMore{
+        width: 47%;
+    }
  }    
  
  @media (min-width: 577px) and (max-width: 900px) {
@@ -215,6 +236,9 @@ h2 {
          height: 20px;
          margin-right: 5px;
      }
+     .button-submit.seeMore{
+        width: 42%;
+     }
  }   
 
  @media (min-width: 901px) and (max-width: 1200px) {
@@ -239,6 +263,9 @@ h2 {
      .card-title p {
              font-size: 18px;
      }
+     .button-submit.seeMore{
+        width: 30%;
+    }
 }
 @media (min-width: 1201px){
     #portfolio{
@@ -326,5 +353,4 @@ h2 {
         height: 20px;
         margin-right: 5px;
     }
-    
 }

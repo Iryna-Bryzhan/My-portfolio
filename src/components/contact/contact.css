@@ -84,7 +84,6 @@ label {
 	transition: all 0.2s ease;
 }
 
-
 /* active */
 
 input:focus ~ label, input.used ~ label,
@@ -93,6 +92,60 @@ textarea:focus ~ label, textarea.used ~ label{
   transform: scale(.75); left: -2px;
 	color: #4a89dc;
     font-size: 26px;
+}
+
+/* Прозрачный фон при автозаполнении */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: transparent !important;
+}
+
+
+.required{
+  color: red;
+}
+.error{
+  color: red;
+  text-align: end;
+}
+
+.modal-success,
+.modal-error  {
+  background-color: #0b234990;
+  padding-top: 25%;
+  display: flex;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 10;
+  color: white;
+ font-size: 36px;
+}
+
+.success-content,
+.error-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+.success-icon,
+.error-icon{
+  margin-right: 2%;
+}
+.success-icon img,
+.error-icon img{
+  width: 80px;
+  margin-right: 5%;
 }
 
 
@@ -148,21 +201,21 @@ input:focus ~ .highlight {
 }
 
 .button-submit {
-    width: 45%;
     position: relative;
     display: inline-block;
     padding: 20px 30px;
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-  }
-  .button-sub{
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
+    cursor: pointer;
     text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: none;
   }
   
   .button-submit:hover {
@@ -175,18 +228,22 @@ input:focus ~ .highlight {
                 0 0 40px #2e73e3;
   }
   
-  .button-submit span {
+  /* .button-submit span {
     position: absolute;
     display: block;
-  }
+
+  } */
   
   .button-submit span:nth-child(2) {
+    position: absolute;
+    display: block;
     top: 0;
     left: -100%;
     width: 100%;
     height: 4px;
     background: linear-gradient(90deg, transparent, #2e73e3);
     animation: btn-anim1 1s linear infinite;
+    animation-delay: .6s
   }
   
   @keyframes btn-anim1 {
@@ -199,13 +256,15 @@ input:focus ~ .highlight {
   }
   
   .button-submit span:nth-child(3) {
+    position: absolute;
+    display: block;
     top: -100%;
     right: 0;
     width: 4px;
     height: 100%;
     background: linear-gradient(180deg, transparent, #2e73e3);
     animation: btn-anim2 1s linear infinite;
-    animation-delay: .3s
+    animation-delay: .9s
   }
   
   @keyframes btn-anim2 {
@@ -218,13 +277,15 @@ input:focus ~ .highlight {
   }
   
   .button-submit span:nth-child(4) {
+    position: absolute;
+    display: block;
     bottom: 0;
     right: -100%;
     width: 100%;
     height: 4px;
     background: linear-gradient(270deg, transparent, #2e73e3);
     animation: btn-anim3 1s linear infinite;
-    animation-delay: .6s
+    animation-delay: 1.2s
   }
   
   @keyframes btn-anim3 {
@@ -237,13 +298,15 @@ input:focus ~ .highlight {
   }
   
   .button-submit span:nth-child(5) {
+    position: absolute;
+    display: block;
     bottom: -100%;
     left: 0;
     width: 4px;
     height: 100%;
     background: linear-gradient(360deg, transparent, #2e73e3);
     animation: btn-anim4 1s linear infinite;
-    animation-delay: .8s
+    animation-delay: 1.4s
   }
   
   @keyframes btn-anim4 {
@@ -275,7 +338,7 @@ input:focus ~ .highlight {
       width: 86%;
       margin-bottom: 50%;
       padding: 10% 6%;
-
+      margin-top: 25%;
     }
     label {
       font-size: 17px;
@@ -284,12 +347,35 @@ input:focus ~ .highlight {
        width: 95%;
     }
     .button-submit {
-      width: 75%;
+      width: 80%;
       margin: 0 auto;
+      font-size: 16px;
+      letter-spacing: 1px;
     }
     .button-sub {
-      font-size: 18px;
+      padding: 10px;
     }
+    input:focus ~ label, input.used ~ label,
+textarea:focus ~ label, textarea.used ~ label{
+    font-size: 24px;
+}
+
+.modal-success,
+.modal-error  {
+  padding-top: 50%;
+ font-size: 25px;
+}
+
+.success-content,
+.error-content {
+flex-direction: column;
+  width: 70%;
+}
+.success-icon img,
+.error-icon img{
+  width: 70px;
+  margin-right: 1%;
+}
 
     .dot3{
       width: 30%;
@@ -325,6 +411,22 @@ input:focus ~ .highlight {
    input, textarea {
        width: 95%;
     }
+    .modal-success,
+.modal-error  {
+  padding-top: 50%;
+ font-size: 25px;
+}
+
+.success-content,
+.error-content {
+/* flex-direction: column; */
+  width: 70%;
+}
+.success-icon img,
+.error-icon img{
+  width: 70px;
+  margin-right: 1%;
+}
     .button-submit {
       width: 75%;
       margin: 0 auto;
@@ -365,8 +467,14 @@ input:focus ~ .highlight {
       width: 95%;
    }
    .button-submit {
-     width: 70%;
+     width: 80%;
+     letter-spacing: 0.5px;
      margin: 5% auto;
+   }
+   .modal-success,
+   .modal-error  {
+     padding-top: 40%;
+    font-size: 30px;
    }
    .dot3{
     width: 23%;
@@ -392,7 +500,7 @@ input:focus ~ .highlight {
 
   }
   .button-submit {
-    width: 60%;
+    width: 70%;
     margin: 5% auto;
   }
   .dot3{
@@ -400,6 +508,11 @@ input:focus ~ .highlight {
 }
 .dot4{
     width: 23%;
+}
+.modal-success,
+.modal-error  {
+  /* padding-top: 50%; */
+ font-size: 32px;
 }
  }
 
