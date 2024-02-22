@@ -1,65 +1,67 @@
-footer{
-    height: 100px;
-    box-sizing: border-box;
-    background: linear-gradient(5deg, rgba(162,181,223,1) 22%, rgb(81 141 237) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
+footer {
+  height: 100px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    5deg,
+    rgba(162, 181, 223, 1) 22%,
+    rgb(81 141 237) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
 }
-footer .logo{
-    width: 100%;
+footer .logo {
+  width: 100%;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-    footer{
-        height: auto;
-        padding: 7% 0;
-        flex-direction: column;
-    }
-    .socials .tel{
-        margin-right: 0;
-        padding: 5% 0;
-    }
-    .social-items {
-        text-align: center;
-    }
-    .socials{
-        align-items: center;
-    }
- }  
+  footer {
+    height: auto;
+    padding: 7% 0;
+    flex-direction: column;
+  }
+  .socials .tel {
+    margin-right: 0;
+    padding: 5% 0;
+  }
+  .social-items {
+    text-align: center;
+  }
+  .socials {
+    align-items: center;
+  }
+}
 
- @media (min-width: 481px) and (max-width: 576px) {
-    footer{
-        height: auto;
-        padding: 7% 0;
-        flex-direction: column;
-    }
-    .socials{
-        display: flex;
-        flex-direction: column;
-    }
-    .tel{
-        margin-right: 0;
-        padding: 10% 0;
-    }
- }  
+@media (min-width: 481px) and (max-width: 576px) {
+  footer {
+    height: auto;
+    padding: 7% 0;
+    flex-direction: column;
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+  }
+  .tel {
+    margin-right: 0;
+    padding: 10% 0;
+  }
+}
 
- @media (min-width: 577px) and (max-width: 768px) {
-    footer{
-        height: auto;
-        padding: 5% 0;
-        flex-direction: column;
-    }
-    .socials{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .tel{
-        margin-right: 0;
-        padding: 10% 0;
-    }
- }  
-
-
+@media (min-width: 577px) and (max-width: 768px) {
+  footer {
+    height: auto;
+    padding: 5% 0;
+    flex-direction: column;
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .tel {
+    margin-right: 0;
+    padding: 10% 0;
+  }
+}

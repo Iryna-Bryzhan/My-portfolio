@@ -9,13 +9,13 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
   const handleInputChange = (e) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [id]: value
+      [id]: value,
     }));
     updateInputClasses(e);
   };
@@ -28,10 +28,10 @@ const Contact = () => {
     }
   };
 
-     // Функция для проверки валидности email
-   function isValidEmail(email) {
+  // Функция для проверки валидности email
+  function isValidEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
+  }
 
   const validateName = () => {
     const nameInput = document.getElementById("name");
@@ -77,37 +77,37 @@ const Contact = () => {
     }
   };
 
-    // Функция для скрытия модального окна с сообщением об ошибке
-function hideModalError() {
-  document.querySelector('.modal-error').style.display = 'none';
-}
+  // Функция для скрытия модального окна с сообщением об ошибке
+  function hideModalError() {
+    document.querySelector(".modal-error").style.display = "none";
+  }
 
-// Функция для показа модального окна с сообщением об ошибке при неудачной отправке данных
-function showModalError() {
-  const modalError = document.querySelector('.modal-error');
-  modalError.style.display = 'block';
+  // Функция для показа модального окна с сообщением об ошибке при неудачной отправке данных
+  function showModalError() {
+    const modalError = document.querySelector(".modal-error");
+    modalError.style.display = "block";
 
-  // Скрыть модальное окно через 3 секунды
-  setTimeout(function() {
+    // Скрыть модальное окно через 3 секунды
+    setTimeout(function () {
       hideModalError();
-  }, 3000);
-}
+    }, 3000);
+  }
 
-// Функция для скрытия модального окна с сообщением об успешной отправке
-function hideModalSuccess() {
-  document.querySelector('.modal-success').style.display = 'none';
-}
+  // Функция для скрытия модального окна с сообщением об успешной отправке
+  function hideModalSuccess() {
+    document.querySelector(".modal-success").style.display = "none";
+  }
 
-// Функция для показа модального окна с сообщением об успешной отправке данных
-function showModalSuccess() {
-  const modalSuccess = document.querySelector('.modal-success');
-  modalSuccess.style.display = 'block';
+  // Функция для показа модального окна с сообщением об успешной отправке данных
+  function showModalSuccess() {
+    const modalSuccess = document.querySelector(".modal-success");
+    modalSuccess.style.display = "block";
 
-  // Скрыть модальное окно через 3 секунды
-  setTimeout(function() {
+    // Скрыть модальное окно через 3 секунды
+    setTimeout(function () {
       hideModalSuccess();
-  }, 3000);
-}
+    }, 3000);
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -121,27 +121,20 @@ function showModalSuccess() {
         email: "",
         message: "",
       });
-    
 
-      
-    // Эмуляция неудачной отправки данных (замените эту часть на реальный код отправки данных на сервер)
-    const isSuccess = true;
+      // Эмуляция неудачной отправки данных (замените эту часть на реальный код отправки данных на сервер)
+      const isSuccess = true;
 
-    if (isSuccess) {
+      if (isSuccess) {
         showModalSuccess(); // Показываем модальное окно с сообщением об успешной отправке
-    } else {
+      } else {
         showModalError(); // Показываем модальное окно с сообщением об ошибке
-    }
+      }
       // Обновляем классы инпутов после сброса значений
-  const inputs = document.querySelectorAll('.form input, .form textarea');
-  inputs.forEach(input => input.classList.remove("used"));
-};
-};
-
-
-
-
-
+      const inputs = document.querySelectorAll(".form input, .form textarea");
+      inputs.forEach((input) => input.classList.remove("used"));
+    }
+  };
 
   return (
     <div id="contact">
@@ -149,24 +142,27 @@ function showModalSuccess() {
       <img src={Dot} alt="Dot" className="dot3" />
       <img src={Dot} alt="Dot" className="dot4" />
 
-      <div className="modal-error" style={{ display: 'none' }}>
-    <div className="error-content">
-      <div className="error-icon">
-        <img src={ErrorImg} alt="error" />
+      <div className="modal-error" style={{ display: "none" }}>
+        <div className="error-content">
+          <div className="error-icon">
+            <img src={ErrorImg} alt="error" />
+          </div>
+          <div className="error-text" data-lang-key="button-error-text">
+            Sorry, an error occurred!
+          </div>
+        </div>
       </div>
-      <div className="error-text" data-lang-key="button-error-text">Sorry, an error occurred!</div>
-    </div>
-  </div>
 
-  <div className="modal-success" style={{ display: 'none' }}>
-    <div className="success-content">
-      <div className="success-icon">
-        <img src={Success} alt="success" />
+      <div className="modal-success" style={{ display: "none" }}>
+        <div className="success-content">
+          <div className="success-icon">
+            <img src={Success} alt="success" />
+          </div>
+          <div className="success-text" data-lang-key="button-success-text">
+            Message sent!
+          </div>
+        </div>
       </div>
-      <div className="success-text" data-lang-key="button-success-text">Message sent!</div>
-    </div>
-  </div>
-
 
       <form className="form" onSubmit={handleSubmit}>
         <div className="group">
@@ -178,7 +174,9 @@ function showModalSuccess() {
             onBlur={validateName}
           />
           <span className="bar"></span>
-          <label>Name<span className="required">*</span></label>
+          <label>
+            Name<span className="required">*</span>
+          </label>
           <div className="error" id="name-error"></div>
         </div>
         <div className="group">
@@ -190,7 +188,9 @@ function showModalSuccess() {
             onBlur={validateEmail}
           />
           <span className="bar"></span>
-          <label>Email<span className="required">*</span></label>
+          <label>
+            Email<span className="required">*</span>
+          </label>
           <div className="error" id="email-error"></div>
         </div>
         <div className="group">
@@ -200,14 +200,21 @@ function showModalSuccess() {
             onChange={handleInputChange}
             onBlur={validateMessage}
           ></textarea>
-           <span className="bar"></span>
-          <label>Message<span className="required">*</span></label>
+          <span className="bar"></span>
+          <label>
+            Message<span className="required">*</span>
+          </label>
           <div className="error" id="message-error"></div>
         </div>
 
-        <button type="submit" data-lang-key="button-submit" className="button-submit">Send Message</button>
+        <button
+          type="submit"
+          data-lang-key="button-submit"
+          className="button-submit"
+        >
+          Send Message
+        </button>
       </form>
-
     </div>
   );
 };

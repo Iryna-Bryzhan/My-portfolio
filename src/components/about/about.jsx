@@ -20,9 +20,6 @@ const About = () => {
             </div>
             <div className="about-img" data-aos="zoom-in" data-aos-delay="600">
                <img className="" src={MyPhoto} alt="MyPhoto"  />
-                {/* <img className="imgCode" src={ImgCode} alt="imgCode"  />
-                <img className="development" src={Development} alt="Development" />
-                <img className="software" src={Software} alt="Software" /> */}
             </div>
             </div>
         </div>
