@@ -103,14 +103,14 @@ export const langArr = {
         "en": "View Code",
         "ua": "Переглянути код",
     },
-    "label-name": { 
-        "en": "Name",
-        "ua": "Ім'я",
-    },
-    "message": { 
-        "en": "Message",
-        "ua": "Повідомлення",
-    },
+    // "label-name": { 
+    //     "en": "Name",
+    //     "ua": "Ім'я",
+    // },
+    // "message": { 
+    //     "en": "Message",
+    //     "ua": "Повідомлення",
+    // },
       "button-see-more": { 
         "en": "See more",
         "ua": "Більше",

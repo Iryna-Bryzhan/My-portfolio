@@ -201,6 +201,8 @@ input:focus ~ .highlight {
 }
 
 .button-submit {
+  background: linear-gradient(-20deg, rgba(162,181,223,1) 22%, rgb(81, 141, 237) 100%);
+border-radius: 10px;
     position: relative;
     display: inline-block;
     padding: 20px 30px;
@@ -219,104 +221,10 @@ input:focus ~ .highlight {
   }
   
   .button-submit:hover {
-    background: #2e73e3;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #2e73e3,
-                0 0 10px #2e73e3,
-                0 0 15px #2e73e3,
-                0 0 40px #2e73e3;
+    background: #2e73e3dc;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   
-  /* .button-submit span {
-    position: absolute;
-    display: block;
-
-  } */
-  
-  .button-submit span:nth-child(2) {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, #2e73e3);
-    animation: btn-anim1 1s linear infinite;
-    animation-delay: .6s
-  }
-  
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-    50%,100% {
-      left: 100%;
-    }
-  }
-  
-  .button-submit span:nth-child(3) {
-    position: absolute;
-    display: block;
-    top: -100%;
-    right: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #2e73e3);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .9s
-  }
-  
-  @keyframes btn-anim2 {
-    0% {
-      top: -100%;
-    }
-    50%,100% {
-      top: 100%;
-    }
-  }
-  
-  .button-submit span:nth-child(4) {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(270deg, transparent, #2e73e3);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: 1.2s
-  }
-  
-  @keyframes btn-anim3 {
-    0% {
-      right: -100%;
-    }
-    50%,100% {
-      right: 100%;
-    }
-  }
-  
-  .button-submit span:nth-child(5) {
-    position: absolute;
-    display: block;
-    bottom: -100%;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #2e73e3);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: 1.4s
-  }
-  
-  @keyframes btn-anim4 {
-    0% {
-      bottom: -100%;
-    }
-    50%,100% {
-      bottom: 100%;
-    }
-  }
 
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -351,9 +259,6 @@ input:focus ~ .highlight {
       margin: 0 auto;
       font-size: 16px;
       letter-spacing: 1px;
-    }
-    .button-sub {
-      padding: 10px;
     }
     input:focus ~ label, input.used ~ label,
 textarea:focus ~ label, textarea.used ~ label{
@@ -587,5 +492,6 @@ flex-direction: column;
   .button-submit {
     width: 60%;
     margin: 5% auto;
+    padding: 20px 25px;
   }
  }

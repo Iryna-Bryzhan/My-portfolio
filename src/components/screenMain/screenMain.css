@@ -22,7 +22,8 @@
 
 .myCV{
     text-align: center;
-    border: 1px solid #4b48be;
+    /* border: 1px solid #4b48be; */
+    border: none;
     background: linear-gradient(-20deg, rgba(162,181,223,1) 22%, rgb(81 141 237) 100%);
     /* background: linear-gradient(-14deg, rgba(162,181,223,1) 22%, rgba(103,58,183,1) 100%);    color: black; */
     text-transform: uppercase;
@@ -32,6 +33,7 @@
     display: inline-block;
     overflow: hidden;
     transition: .5s;
+    border-radius: 10px;
     }
 
     .myCV-text{
@@ -44,96 +46,11 @@
         display: inline-block;
         }
     .myCV:hover {
-     background: #2e73e3;
-        color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 5px #2e73e3,
-                    0 0 10px #2e73e3,
-                    0 0 15px #2e73e3,
-                    0 0 40px #2e73e3;
+            background: #2e73e3dc;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
 
-      .myCV span {
-        position: absolute;
-        display: block;
-      }
-      
-      .myCV span:nth-child(1) {
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 5px;
-        background: linear-gradient(90deg, transparent, #2e73e3);
-        animation: btn-anim1 1s linear infinite;
-      }
-      
-      @keyframes btn-anim1 {
-        0% {
-          left: -100%;
-        }
-        50%,100% {
-          left: 100%;
-        }
-      }
-      
-      .myCV span:nth-child(2) {
-        top: -100%;
-        right: 0;
-        width: 5px;
-        height: 100%;
-        background: linear-gradient(180deg, transparent, #2e73e3);
-        animation: btn-anim2 1s linear infinite;
-        animation-delay: .3s
-      }
-      
-      @keyframes btn-anim2 {
-        0% {
-          top: -100%;
-        }
-        50%,100% {
-          top: 100%;
-        }
-      }
-      
-      .myCV span:nth-child(3) {
-        bottom: 0;
-        right: -100%;
-        width: 100%;
-        height: 5px;
-        background: linear-gradient(270deg, transparent, #2e73e3);
-        animation: btn-anim3 1s linear infinite;
-        animation-delay: .6s
-      }
-      
-      @keyframes btn-anim3 {
-        0% {
-          right: -100%;
-        }
-        50%,100% {
-          right: 100%;
-        }
-      }
-      
-      .myCV span:nth-child(4) {
-        bottom: -100%;
-        left: 0;
-        width: 5px;
-        height: 100%;
-        background: linear-gradient(360deg, transparent, #2e73e3);
-        animation: btn-anim4 1s linear infinite;
-        animation-delay: .8s
-      }
-      
-      @keyframes btn-anim4 {
-        0% {
-          bottom: -100%;
-        }
-        50%,100% {
-          bottom: 100%;
-        }
-      }
 
-      
 
 .info-left{
     text-align: start;
@@ -169,9 +86,13 @@
 .myCV{
     width: 45%;
     margin-bottom: 15%;
+        padding: 10px 20px;
+}
+.myCV-text {
+    font-size: 18px;
 }
 .info-left{
-    top: 52%;
+    top: 48%;
     position: relative;
 }
 .info-left h1{

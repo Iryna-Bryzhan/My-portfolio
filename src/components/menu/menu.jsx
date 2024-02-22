@@ -85,10 +85,6 @@ const handleScroll = () => {
                     <a href="#portfolio" onClick={handleMenuClick} data-lang-key="portfolio">Portfolio</a>
                     <div className="contactMe">
                     <a href="#contact"  data-lang-key="contact">CONTACT ME</a>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
                     </div>                    
                     <button className={`change-lang ${lang === 'ua' ? 'active' : ''}`} onClick={() => handleLanguageChange('ua')}>UA</button>
                     <button className={`change-lang ${lang === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>EN</button>  

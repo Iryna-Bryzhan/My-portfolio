@@ -126,7 +126,7 @@ const Portfolio = () => {
   
         <div className="cards">
           {cardsData.slice(0, displayedCards).map((card, index) => (
-            <div key={index} className="card">
+            <div key={index} className="card"  data-aos="zoom-in" data-aos-delay="500">
               <div className="card__image-holder">
                 <img className="card__image" src={card.image} alt="wave" />
               </div>

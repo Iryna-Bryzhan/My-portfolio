@@ -18,7 +18,7 @@ const About = () => {
             <p data-lang-key="about-text-3">I complete tasks on time and give priority to constant self-improvement and professional development.
             </p>
             </div>
-            <div className="about-img">
+            <div className="about-img" data-aos="zoom-in" data-aos-delay="600">
                <img className="" src={MyPhoto} alt="MyPhoto"  />
                 {/* <img className="imgCode" src={ImgCode} alt="imgCode"  />
                 <img className="development" src={Development} alt="Development" />

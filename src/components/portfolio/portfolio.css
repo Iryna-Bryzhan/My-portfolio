@@ -104,12 +104,12 @@ h2 {
 }
 
 .button-submit.seeMore{
+    background: linear-gradient(-20deg, rgba(162,181,223,1) 22%, rgb(81, 141, 237) 100%);    border-radius: 10px;
     width: 20%;
-    background: transparent;
     border: none;
 }
 
-.button-seeMore{
+.button-seeMore{ 
     text-align: center;
     margin-bottom: 5%;
 }

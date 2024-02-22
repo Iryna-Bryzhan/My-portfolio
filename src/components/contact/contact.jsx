@@ -178,7 +178,7 @@ function showModalSuccess() {
             onBlur={validateName}
           />
           <span className="bar"></span>
-          <label data-lang-key="label-name">Name<span className="required">*</span></label>
+          <label>Name<span className="required">*</span></label>
           <div className="error" id="name-error"></div>
         </div>
         <div className="group">
@@ -201,16 +201,11 @@ function showModalSuccess() {
             onBlur={validateMessage}
           ></textarea>
            <span className="bar"></span>
-          <label data-lang-key="message">Message<span className="required">*</span></label>
+          <label>Message<span className="required">*</span></label>
           <div className="error" id="message-error"></div>
         </div>
 
-        <button type="submit" data-lang-key="button-submit" className="button-submit">Send Message
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <button type="submit" data-lang-key="button-submit" className="button-submit">Send Message</button>
       </form>
 
     </div>
