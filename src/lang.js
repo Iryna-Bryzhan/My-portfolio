@@ -87,6 +87,14 @@ export const langArr = {
     en: "Implementation of the pet-project according to the technical specifications",
     ua: "Реалізація пет проекту згідно технічного завдання",
   },
+  "card-title-text-6": {
+    en: "Working with the API, receiving and displaying data",
+    ua: "Робота з API, отримання та відображення даних",
+  },
+  "card-title-text-7": {
+    en: "Creating a design, developing a page, setting up forms",
+    ua: "Створення дизайну, розробка сторінки, налаштування форм",
+  },
   preview: {
     en: "Live Preview",
     ua: "Переглянути сайт",

@@ -10,10 +10,11 @@ import card4 from "../../img/Screenshot_4.png";
 import card5 from "../../img/Screenshot_5.png";
 import card6 from "../../img/Screenshot_psy.png";
 import card7 from "../../img/My_portfolio.png";
+import card8 from "../../img/rick-and_Morty.png";
 import { useState } from "react";
 
 const Portfolio = () => {
-  const initialDisplayedCards = 3;
+  const initialDisplayedCards = 6;
   const [displayedCards, setDisplayedCards] = useState(initialDisplayedCards);
 
   // Array of card data
@@ -68,8 +69,8 @@ const Portfolio = () => {
     {
       image: card6,
       title: "Landing page for a psychologist",
-      description: "Page development, deployment on hosting, setting up forms",
-      stack: "Tech stack: HTML, CSS, JavaScript",
+      description: "Creating a design, developing a page, setting up forms",
+      stack: "Tech stack: HTML, CSS, JavaScript, WOW.js library",
       links: [
         {
           url: "https://iryna-bryzhan.github.io/psychologist-Bryzhan-Tetiana/",
@@ -85,14 +86,14 @@ const Portfolio = () => {
         },
       ],
       langKey: {
-        description: "card-title-text",
+        description: "card-title-text-7",
       },
     },
     {
       image: card7,
       title: "My portfolio",
       description: "Page development, deployment on hosting, setting up forms",
-      stack: "Tech stack: HTML, CSS, JavaScript, React",
+      stack: "Tech stack: HTML, CSS, JavaScript, React, AOS.js library",
       links: [
         {
           url: "https://my-portfolio-swart-one-44.vercel.app/en",
@@ -108,7 +109,7 @@ const Portfolio = () => {
         },
       ],
       langKey: {
-        description: "card-title-text",
+        description: "card-title-text-7",
       },
     },
     {
@@ -132,6 +133,29 @@ const Portfolio = () => {
       ],
       langKey: {
         description: "card-title-text-3",
+      },
+    },
+    {
+      image: card8,
+      title: "Pet-project Rick and Morty",
+      description: "Working with the API, receiving and displaying data",
+      stack: "Tech stack: HTML, CSS, JavaScript, React",
+      links: [
+        {
+          url: "https://homework-react-rick-and-morty-edpz.vercel.app/",
+          text: "Live Preview",
+          img: iconsLink,
+          langKey: "preview",
+        },
+        {
+          url: "https://github.com/Iryna-Bryzhan/homework_react_rick_and_morty",
+          text: "View Code",
+          img: iconsGithub,
+          langKey: "view",
+        },
+      ],
+      langKey: {
+        description: "card-title-text-6",
       },
     },
     {

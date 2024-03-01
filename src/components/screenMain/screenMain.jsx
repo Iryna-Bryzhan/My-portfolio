@@ -32,7 +32,7 @@ const ScreenMain = () => {
             Front-end Developer
           </p>
           <a
-            href="https://drive.google.com/file/d/1VfEZAwrYO6yivymSkEGF7HoaoJEVKnVd/view"
+            href="https://drive.google.com/file/d/18pAWFWflsDDh1EQ18xOMTgr0FP6pFe1h/view?usp=sharing"
             target="blank"
             className="myCV "
             data-aos="fade-up-left"
