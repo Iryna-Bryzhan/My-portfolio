@@ -17,7 +17,7 @@ const Skills = () => {
       <img src={Dot} alt="Dot" className="dot" />
       <img src={Dot} alt="Dot" className="dot2" />
       <Title title="Skills"></Title>
-      <div className="using" data-lang-key="using">
+      <div className="using" data-lang-key="using" data-aos="fade-right"  data-aos-delay="300" data-aos-duration="800" data-aos-once="true">
         USING NOW:
       </div>
       <div className="skills-list">

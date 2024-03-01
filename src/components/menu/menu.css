@@ -39,16 +39,29 @@
   align-items: center;
 }
 .menu-list a {
+  position: relative;
   text-decoration: none;
   color: white;
   font-size: 23px;
   font-weight: bold;
   margin-right: 5%;
-  transition: all 0.1s ease 0s;
+
+
+  background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 110%;
+    background-repeat: no-repeat;
+    background-size: 0% 5px;
+    transition: background-size .5s;
 }
+
+.menu-list a:hover {
+    background-size: 110% 5px;
+}
+
 .menu-list a:last-child {
   margin-right: 0;
 }
+
 .change-lang {
   background: none;
   border: none;
@@ -86,6 +99,7 @@
   display: inline-block;
   text-decoration: none;
   overflow: hidden;
+  background-image: none;
 }
 .active {
   color: #3378e6;

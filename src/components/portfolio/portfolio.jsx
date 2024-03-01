@@ -223,6 +223,8 @@ const Portfolio = () => {
             className="card"
             data-aos="zoom-in"
             data-aos-delay="500"
+            data-aos-duration="800"
+            data-aos-once="true"
           >
             <div className="card__image-holder">
               <img className="card__image" src={card.image} alt="wave" />
