@@ -269,10 +269,6 @@ const Portfolio = () => {
             <div className="button-sub" data-lang-key="button-see-more">
               See more
             </div>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
           </button>
         </div>
       )}

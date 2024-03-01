@@ -4,6 +4,7 @@ import Dot from "../../img/Dots.png";
 import Success from "../../img/free-icon-success-7778643.png";
 import ErrorImg from "../../img/free-icon-cross-6711656.png";
 import "./contact.css";
+import Button from "../button/button";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -206,14 +207,7 @@ const Contact = () => {
           </label>
           <div className="error" id="message-error"></div>
         </div>
-
-        <button
-          type="submit"
-          data-lang-key="button-submit"
-          className="button-submit"
-        >
-          Send Message
-        </button>
+        <Button></Button>
       </form>
     </div>
   );

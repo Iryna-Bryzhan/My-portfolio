@@ -242,36 +242,6 @@ input:focus ~ .highlight {
   }
 }
 
-.button-submit {
-  background: linear-gradient(
-    -20deg,
-    rgba(162, 181, 223, 1) 22%,
-    rgb(81, 141, 237) 100%
-  );
-  border-radius: 10px;
-  position: relative;
-  display: inline-block;
-  padding: 20px 30px;
-  overflow: hidden;
-  transition: 0.5s;
-  margin-top: 40px;
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-color: transparent;
-  border: none;
-}
-
-.button-submit:hover {
-  background: #2e73e3dc;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
 @media (min-width: 0px) and (max-width: 480px) {
   #contact {
     height: auto;
@@ -299,12 +269,7 @@ input:focus ~ .highlight {
   textarea {
     width: 95%;
   }
-  .button-submit {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 16px;
-    letter-spacing: 1px;
-  }
+
   input:focus ~ label,
   input.used ~ label,
   textarea:focus ~ label,
@@ -378,10 +343,7 @@ input:focus ~ .highlight {
     width: 70px;
     margin-right: 1%;
   }
-  .button-submit {
-    width: 75%;
-    margin: 0 auto;
-  }
+
   .dot3 {
     width: 30%;
     right: -20%;
@@ -414,11 +376,6 @@ input:focus ~ .highlight {
   textarea {
     width: 95%;
   }
-  .button-submit {
-    width: 80%;
-    letter-spacing: 0.5px;
-    margin: 5% auto;
-  }
   .modal-success,
   .modal-error {
     padding-top: 40%;
@@ -444,10 +401,6 @@ input:focus ~ .highlight {
     width: 50%;
     margin-bottom: 30%;
     padding: 5%;
-  }
-  .button-submit {
-    width: 70%;
-    margin: 5% auto;
   }
   .dot3 {
     width: 23%;
@@ -487,10 +440,6 @@ input:focus ~ .highlight {
     margin-bottom: 5%;
     padding: 5%;
   }
-  .button-submit {
-    width: 60%;
-    margin: 5% auto;
-  }
   .dot3 {
     width: 18%;
   }
@@ -512,10 +461,7 @@ input:focus ~ .highlight {
     margin-bottom: 5%;
     padding: 5%;
   }
-  .button-submit {
-    width: 60%;
-    margin: 5% auto;
-  }
+
   .dot3 {
     width: 18%;
   }
@@ -524,10 +470,3 @@ input:focus ~ .highlight {
   }
 }
 
-@media (min-width: 1601px) and (max-width: 1800px) {
-  .button-submit {
-    width: 60%;
-    margin: 5% auto;
-    padding: 20px 25px;
-  }
-}

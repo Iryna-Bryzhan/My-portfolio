@@ -41,10 +41,6 @@ const ScreenMain = () => {
             <div data-lang-key="myCV" className="myCV-text">
               My CV
             </div>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
           </a>
         </div>
         <SocialItemMain></SocialItemMain>
