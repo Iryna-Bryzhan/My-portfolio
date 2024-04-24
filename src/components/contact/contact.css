@@ -90,7 +90,10 @@
     left: -13%;
     bottom: 1%;
   }
-  
+  .contact-content .socials {
+    width: 100%;
+    margin-top:  2%;
+       }
   .contact-content  .tel{
     margin-bottom: 5%;
    }

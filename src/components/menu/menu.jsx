@@ -113,7 +113,8 @@ const Menu = () => {
             Portfolio
           </a>
           <div className="contactMe">
-            <a href="#contact" data-lang-key="contact">
+            <a href="#contact" data-lang-key="contact"
+             onClick={handleMenuClick}>
               CONTACT ME
             </a>
           </div>
