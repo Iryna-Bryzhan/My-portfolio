@@ -95,6 +95,7 @@
   }
   .about-img {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -129,6 +130,7 @@
   }
   .about-img {
     width: 70%;
+    text-align: center;
   }
 }
 
@@ -164,6 +166,8 @@
 
   .about-img {
     width: 70%;
+    text-align: center;
+
   }
 }
 
