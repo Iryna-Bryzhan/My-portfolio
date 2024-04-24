@@ -1,11 +1,7 @@
 footer {
-  height: 100px;
+  height: 80px;
   box-sizing: border-box;
-  background: linear-gradient(
-    5deg,
-    rgba(162, 181, 223, 1) 22%,
-    rgb(81 141 237) 100%
-  );
+  background: rgb(81 141 237);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,6 +9,10 @@ footer {
 }
 footer .logo {
   width: 100%;
+}
+footer .menu-list{
+  width: 80%;
+  justify-content: center;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {

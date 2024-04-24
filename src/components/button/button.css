@@ -1,91 +1,80 @@
+.button-submit {
+  background: linear-gradient(
+    -20deg,
+    rgba(162, 181, 223, 1) 22%,
+    rgb(81, 141, 237) 100%
+  );
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: none;
+}
 
+.button-submit:hover {
+  background: #2e73e3dc;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .button-submit {
-    background: linear-gradient(
-      -20deg,
-      rgba(162, 181, 223, 1) 22%,
-      rgb(81, 141, 237) 100%
-    );
-    border-radius: 10px;
-    position: relative;
-    display: inline-block;
-    padding: 20px 30px;
-    overflow: hidden;
-    transition: 0.5s;
-    margin-top: 40px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-color: transparent;
-    border: none;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    letter-spacing: 1px;
   }
-  
-  .button-submit:hover {
-    background: #2e73e3dc;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+@media (min-width: 481px) and (max-width: 576px) {
+  .button-submit {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 16px;
   }
-  
-  @media (min-width: 0px) and (max-width: 480px) {
-    .button-submit {
-      width: 80%;
-      margin: 0 auto;
-      font-size: 16px;
-      letter-spacing: 1px;
-    }
-
+}
+@media (min-width: 577px) and (max-width: 850px) {
+  .button-submit {
+    width: 80%;
+    letter-spacing: 0.5px;
+    margin: 5% auto;
   }
-  @media (min-width: 481px) and (max-width: 576px) {
-
-    .button-submit {
-      width: 75%;
-      margin: 0 auto;
-      font-size: 16px;
-    }
-
+}
+@media (min-width: 851px) and (max-width: 1200px) {
+  .button-submit {
+    width: 70%;
+    margin: 5% auto;
   }
-  @media (min-width: 577px) and (max-width: 850px) {
+}
 
-    .button-submit {
-      width: 80%;
-      letter-spacing: 0.5px;
-      margin: 5% auto;
-    }
-
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .button-submit {
+    width: 60%;
+    margin: 5% auto;
   }
-  @media (min-width: 851px) and (max-width: 1200px) {
+}
 
-    .button-submit {
-      width: 70%;
-      margin: 5% auto;
-    }
-
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .button-submit {
+    width: 60%;
+    margin: 5% auto;
   }
+}
 
-  @media (min-width: 1201px) and (max-width: 1400px) {
-
-    .button-submit {
-      width: 60%;
-      margin: 5% auto;
-    }
+@media (min-width: 1601px) and (max-width: 1800px) {
+  .button-submit {
+    width: 60%;
+    margin: 5% auto;
+    padding: 20px 25px;
   }
-  
-  @media (min-width: 1401px) and (max-width: 1600px) {
-
-    .button-submit {
-      width: 60%;
-      margin: 5% auto;
-    }
-  }
-  
-  @media (min-width: 1601px) and (max-width: 1800px) {
-    .button-submit {
-      width: 60%;
-      margin: 5% auto;
-      padding: 20px 25px;
-    }
-  }
-  
+}

@@ -46,16 +46,15 @@
   font-weight: bold;
   margin-right: 5%;
 
-
   background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 110%;
-    background-repeat: no-repeat;
-    background-size: 0% 5px;
-    transition: background-size .5s;
+  background-position: 0% 110%;
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: background-size 0.5s;
 }
 
 .menu-list a:hover {
-    background-size: 110% 5px;
+  background-size: 110% 5px;
 }
 
 .menu-list a:last-child {

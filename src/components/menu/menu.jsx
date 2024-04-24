@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "./menu.css";
 import "../../index";
 // import {langArr} from "../../lang"
-import { currentLang } from "../../main";
-import { useLang } from "../../main";
+import { currentLang } from "../../code/main";
+import { useLang } from "../../code/main";
 
 function myFunction() {
   let menuBurger = document.querySelector(".menu-burger");

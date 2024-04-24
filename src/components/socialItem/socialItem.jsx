@@ -19,7 +19,7 @@ const SocialItem = () => {
           href="https://github.com/Iryna-Bryzhan?tab=repositories"
           target="blank"
         >
-          <img src={github} alt="github" />
+          <img type="image/svg+xml" src={github} alt="github" />
         </a>
         <a
           className="social"

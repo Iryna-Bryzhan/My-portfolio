@@ -11,6 +11,7 @@ import card5 from "../../img/Screenshot_5.png";
 import card6 from "../../img/Screenshot_psy.png";
 import card7 from "../../img/My_portfolio.png";
 import card8 from "../../img/rick-and_Morty.png";
+import card9 from "../../img/monodata.png";
 import { useState } from "react";
 
 const Portfolio = () => {
@@ -103,6 +104,29 @@ const Portfolio = () => {
         },
         {
           url: "https://github.com/Iryna-Bryzhan/My-portfolio",
+          text: "View Code",
+          img: iconsGithub,
+          langKey: "view",
+        },
+      ],
+      langKey: {
+        description: "card-title-text-7",
+      },
+    },
+    {
+      image: card9,
+      title: "Landing page for Monodata",
+      description: "Page development, deployment on hosting, setting up forms",
+      stack: "Tech stack: HTML, CSS, JavaScript, jQuery, AOS.js library",
+      links: [
+        {
+          url: "https://monodata.vercel.app/",
+          text: "Live Preview",
+          img: iconsLink,
+          langKey: "preview",
+        },
+        {
+          url: "https://github.com/Iryna-Bryzhan/monodata",
           text: "View Code",
           img: iconsGithub,
           langKey: "view",
@@ -277,4 +301,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-

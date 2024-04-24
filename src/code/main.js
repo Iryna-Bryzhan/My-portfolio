@@ -1,4 +1,4 @@
-import "./index.css";
+import "../index.css";
 import { langArr } from "./lang";
 import { useState, useEffect } from "react";
 import AOS from "aos";
