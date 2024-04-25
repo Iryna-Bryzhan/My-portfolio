@@ -120,7 +120,7 @@ const Portfolio = () => {
       stack: "Tech stack: HTML, CSS, JavaScript, jQuery, AOS.js library",
       links: [
         {
-          url: "hhttp://monodata.online/",
+          url: "http://monodata.online/",
           text: "Live Preview",
           img: iconsLink,
           langKey: "preview",
