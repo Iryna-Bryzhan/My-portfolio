@@ -5,6 +5,7 @@ import ScreenMain from "../screenMain/screenMain";
 import About from "../about/about";
 import Skills from "../skills/skills";
 import Portfolio from "../portfolio/portfolio";
+import ContactMe from "../contactMe/contactMe";
 import "animate.css";
 import Quite from "../quote/quote";
 import Contact from "../contact/contact";
@@ -22,6 +23,7 @@ function App() {
       <div className="container">
         <Portfolio></Portfolio>
       </div>
+      {/* <ContactMe></ContactMe> */}
       <Contact></Contact>
     </div>
   );
