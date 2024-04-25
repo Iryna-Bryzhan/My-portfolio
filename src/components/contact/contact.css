@@ -5,8 +5,8 @@
   /* background-color : #f0f0f0; */
 
   border-image: fill 1
-  linear-gradient(206deg, rgba(162, 181, 223, 0.8) 44%, rgb(81 141 237) 98%);
-   background-image: url("../../img/image_processing20210903-8670-12c1naf.gif");
+    linear-gradient(206deg, rgba(162, 181, 223, 0.8) 44%, rgb(81 141 237) 98%);
+  background-image: url("../../img/image_processing20210903-8670-12c1naf.gif");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -41,7 +41,7 @@
   bottom: 3%;
   left: -5%;
 }
-.contact-content{
+.contact-content {
   flex-direction: column;
   display: flex;
   align-items: start;
@@ -51,20 +51,18 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-
-  }
-
-  .contact-content  .tel{
- margin-bottom: 10%;
 }
 
+.contact-content .tel {
+  margin-bottom: 10%;
+}
 
 @media (min-width: 0px) and (max-width: 480px) {
   #contact {
     height: auto;
     padding: 10%;
     padding-top: 20%;
-   
+
     background-image: none;
   }
 
@@ -92,12 +90,11 @@
   }
   .contact-content .socials {
     width: 100%;
-    margin-top:  2%;
-       }
-  .contact-content  .tel{
+    margin-top: 2%;
+  }
+  .contact-content .tel {
     margin-bottom: 5%;
-   }
-   
+  }
 }
 @media (min-width: 481px) and (max-width: 576px) {
   #contact {
@@ -121,12 +118,12 @@
   }
   .contact-content .socials {
     width: 100%;
-    margin-top:  2%;
-       }
-  
-  .contact-content  .tel{
+    margin-top: 2%;
+  }
+
+  .contact-content .tel {
     margin-bottom: 2%;
-   }
+  }
   .dot3 {
     width: 30%;
     right: -20%;
@@ -142,7 +139,7 @@
     height: auto;
     padding: 10%;
     padding-top: 15%;
-   
+
     background-image: none;
   }
 
@@ -152,7 +149,7 @@
   }
   .text-messages {
     width: 90%;
-    margin:  10% auto;
+    margin: 10% auto;
     margin-bottom: 2%;
     text-align: center;
   }
@@ -166,16 +163,16 @@
     left: -20%;
     bottom: 1%;
   }
-  .tel{
+  .tel {
     padding: 4% 0;
   }
-  .contact-content  .tel{
-  margin-bottom: 0%;
-   }
-   .contact-content .socials {
-width: 100%;
-margin-top:  5%;
-   }
+  .contact-content .tel {
+    margin-bottom: 0%;
+  }
+  .contact-content .socials {
+    width: 100%;
+    margin-top: 5%;
+  }
 }
 @media (min-width: 851px) and (max-width: 1200px) {
   #contact {
@@ -190,22 +187,21 @@ margin-top:  5%;
   }
   .text-messages {
     width: 90%;
-    margin:  10% auto;
+    margin: 10% auto;
     margin-bottom: 2%;
     text-align: center;
   }
 
   .contact-content .socials {
     width: 100%;
-    margin-top:  5%;
-       }
+    margin-top: 5%;
+  }
   .dot3 {
     width: 23%;
   }
   .dot4 {
     width: 23%;
   }
-
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
@@ -239,5 +235,4 @@ margin-top:  5%;
     background-size: 380px;
     background-position: 80% 75%;
   }
-
 }
